@@ -3,7 +3,7 @@ Note: Variable names must match exactly because later sessions import these name
 """
 
 # Task 1: Print Flower Summary
-id = "flower_2x"  # Task 2: Change this to "flower_2x"
+id = "flower1"  # Task 2: Change this to "flower_2x"
 print("\n=== Flower Summary ===")
 print("ID:", id)
 
@@ -11,7 +11,7 @@ print("ID:", id)
 sepal_length = 5.1
 sepal_width = 3.5  # Uncomment me by click ctrl + / (Windows)
 petal_length = 1.4    # Add appropriate value for petal_length
-petal_width = 100000
+petal_width = 0.2
 species = "setosa"
 
 # Task 3a: Uncomment the print statements below to see the values of the variables you defined.
@@ -33,3 +33,36 @@ label_key = "species"
 
 # Task 5: Comparing with threshold
 is_short_petal = petal_length < threshold
+
+# Task 6: Print Comparison results
+print("\n=== Comparison ===")
+
+print(f"is_short_petal (petal_length < threshold): {is_short_petal}")
+
+# Task 7: Type Conversions
+
+petal_length_text = str(petal_length)
+threshold_text = str(threshold)
+threshold_number = float(threshold_text)
+
+print("\n=== Conversions ===")
+print(f"petal_length_text: {petal_length_text} | type: {type(petal_length_text)}")
+print(f"threshold_text: {threshold_text} | type: {type(threshold_text)}")
+print(f"threshold_number: {threshold_number} | type: {type(threshold_number)}")
+
+# Task 8: Adding Flower 2
+
+id_2 = "flower2"
+sepal_length_2 = 4.9
+sepal_width_2 = 3.0
+petal_length_2 = 1.4
+petal_width_2 = 0.2
+species_2 = "setosa"
+
+# Task 9: Compute petal area for Flower 2
+petal_area_2 = petal_length_2 * petal_width_2
+
+print("\n=== Flower 2 ===")
+
+print("ID:", id_2)
+print("Petal Area 2:", petal_area_2)
